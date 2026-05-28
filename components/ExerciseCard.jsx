@@ -269,13 +269,14 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onClick={() => adjustWeight(idx, -2.5)}
                           aria-label="Decrease weight"
                           style={{
-                            width: '36px', height: '48px',
+                            width: '32px', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             borderRight: `1px solid ${set.done ? 'rgba(34,197,94,0.08)' : 'rgba(255,255,255,0.04)'}`,
                             color: 'rgba(255,255,255,0.3)', fontSize: '18px', fontWeight: '400',
                             cursor: 'pointer',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            flexShrink: 0,
                           }}
                         >−</button>
                         <input
@@ -285,7 +286,7 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onChange={(e) => updateSet(idx, 'weight', e.target.value)}
                           placeholder={prevSet ? `${prevSet.weight}` : '0'}
                           style={{
-                            flex: 1, minWidth: 0, height: '48px',
+                            flex: 1, minWidth: 0, width: '100%', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             color: set.done ? '#22c55e' : '#eee',
@@ -298,13 +299,14 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onClick={() => adjustWeight(idx, 2.5)}
                           aria-label="Increase weight"
                           style={{
-                            width: '36px', height: '48px',
+                            width: '32px', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             borderLeft: `1px solid ${set.done ? 'rgba(34,197,94,0.08)' : 'rgba(255,255,255,0.04)'}`,
                             color: 'rgba(255,255,255,0.3)', fontSize: '18px', fontWeight: '400',
                             cursor: 'pointer',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            flexShrink: 0,
                           }}
                         >+</button>
                       </div>
@@ -322,13 +324,14 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onClick={() => adjustReps(idx, -1)}
                           aria-label="Decrease reps"
                           style={{
-                            width: '36px', height: '48px',
+                            width: '32px', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             borderRight: `1px solid ${set.done ? 'rgba(34,197,94,0.08)' : 'rgba(255,255,255,0.04)'}`,
                             color: 'rgba(255,255,255,0.3)', fontSize: '18px', fontWeight: '400',
                             cursor: 'pointer',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            flexShrink: 0,
                           }}
                         >−</button>
                         <input
@@ -338,7 +341,7 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onChange={(e) => updateSet(idx, 'reps', e.target.value)}
                           placeholder={prevSet ? `${prevSet.reps}` : '10'}
                           style={{
-                            flex: 1, minWidth: 0, height: '48px',
+                            flex: 1, minWidth: 0, width: '100%', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             color: set.done ? '#22c55e' : '#eee',
@@ -351,13 +354,14 @@ export default function ExerciseCard({ exercise, dayColor, onChange, previousSet
                           onClick={() => adjustReps(idx, 1)}
                           aria-label="Increase reps"
                           style={{
-                            width: '36px', height: '48px',
+                            width: '32px', height: '48px',
                             background: 'transparent',
                             border: 'none',
                             borderLeft: `1px solid ${set.done ? 'rgba(34,197,94,0.08)' : 'rgba(255,255,255,0.04)'}`,
                             color: 'rgba(255,255,255,0.3)', fontSize: '18px', fontWeight: '400',
                             cursor: 'pointer',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            flexShrink: 0,
                           }}
                         >+</button>
                       </div>

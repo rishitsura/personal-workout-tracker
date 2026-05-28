@@ -301,7 +301,7 @@ export default function TodayPage() {
               const s = buildSession(nextDayKey)
               setSession(s)
               setTodayLog(null)
-              saveActiveSession(s)
+              contextSaveActiveSession(s)
             }}
             style={{
               width: '100%', padding: '18px', background: 'rgba(255,255,255,0.02)',
@@ -358,7 +358,7 @@ export default function TodayPage() {
       }}>
         {/* Date */}
         <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.18)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '10px' }}>
-          {formatDate(getTodayStr())}
+          {formatDate(getLocalTodayStr())}
         </div>
 
         {/* Day name + progress + controls */}
