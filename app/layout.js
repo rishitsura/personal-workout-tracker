@@ -8,7 +8,7 @@ export const metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Iron Log',
+    title: 'RepsLoop',
   },
 }
 

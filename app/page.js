@@ -81,7 +81,7 @@ export default function LandingPage() {
 
           {/* Title */}
           <h1 className="font-display text-6xl tracking-wider text-txt-primary leading-none mb-3">
-            IRON LOG
+            REPSLOOP
           </h1>
 
           {/* Tagline */}

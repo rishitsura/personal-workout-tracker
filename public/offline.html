@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iron Log — Offline</title>
+  <title>RepsLoop — Offline</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background: #0a0a0a;
       color: #f5f5f5;
@@ -17,13 +23,16 @@
       text-align: center;
       padding: 24px;
     }
+
     .container {
       max-width: 360px;
     }
+
     .icon {
       font-size: 48px;
       margin-bottom: 16px;
     }
+
     h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 32px;
@@ -31,11 +40,13 @@
       color: #f97316;
       margin-bottom: 8px;
     }
+
     p {
       color: #888888;
       font-size: 15px;
       line-height: 1.6;
     }
+
     .retry {
       display: inline-block;
       margin-top: 24px;
@@ -47,15 +58,20 @@
       text-decoration: none;
       transition: opacity 0.2s;
     }
-    .retry:hover { opacity: 0.9; }
+
+    .retry:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="icon">📡</div>
-    <h1>IRON LOG</h1>
+    <h1>REPSLOOP</h1>
     <p>You're currently offline. Check your connection and try again.</p>
     <a href="/" class="retry" onclick="window.location.reload(); return false;">Retry</a>
   </div>
 </body>
+
 </html>

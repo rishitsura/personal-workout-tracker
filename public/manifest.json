@@ -1,6 +1,6 @@
 {
-  "name": "Iron Log",
-  "short_name": "IronLog",
+  "name": "RepsLoop",
+  "short_name": "RepsLoop",
   "description": "Your personal workout tracker — log workouts, track progress, crush PRs.",
   "start_url": "/today",
   "display": "standalone",
