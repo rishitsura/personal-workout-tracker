@@ -1,19 +1,19 @@
 import './globals.css'
 import { AuthProvider } from '../lib/authContext'
-import { WorkoutProvider } from '../lib/workoutContext'
-import AppWrapper from '../components/AppWrapper'
 
 export const metadata = {
   title: 'Iron Log',
   description: 'Your personal workout tracker — log workouts, track progress, crush PRs.',
+  manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
+    title: 'Iron Log',
   },
 }
 
 export const viewport = {
-  themeColor: '#050505',
+  themeColor: '#0a0a0a',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
@@ -26,12 +26,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
-      <body style={{ fontFamily: "'DM Sans', sans-serif" }}>
+      <body className="font-body">
         <AuthProvider>
-          <WorkoutProvider>
-            <AppWrapper>{children}</AppWrapper>
-          </WorkoutProvider>
+          {children}
         </AuthProvider>
       </body>
     </html>
