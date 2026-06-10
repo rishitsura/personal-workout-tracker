@@ -2,7 +2,7 @@ import './globals.css'
 import { AuthProvider } from '../lib/authContext'
 
 export const metadata = {
-  title: 'Iron Log',
+  title: 'RepsLoop - Personal Workout Tracker',
   description: 'Your personal workout tracker — log workouts, track progress, crush PRs.',
   manifest: '/manifest.json',
   appleWebApp: {
